@@ -13,7 +13,7 @@ import FoodScreen from './screens/Foodscreen';
 import AdminScreen from './screens/Adminscreen';
 import AboutScreen from './screens/AboutScreen';
 import Footer from './components/Footer';
-import ContactScreen from './screens/ContactScreen';
+// import ContactScreen from './screens/ContactScreen';
 // import Tabscreen from './screens/Tabs';
 
 
@@ -28,7 +28,7 @@ function App() {
           <Route path="/" exact element={<LandingScreen/>}/>
           <Route path="/home" exact element={<HomeScreen/>}/>
           <Route path="/home" exact element={<LocationScreen/>}/>
-          <Route path="/contact" exact element={<ContactScreen/>}/>
+          {/* <Route path="/contact" exact element={<ContactScreen/>}/> */}
           <Route path="/rooms/:name" exact element={<PlaceScreen/>}/>
           <Route path="/register" exact element={<Registerscreen/>}/>
           <Route path="/login" exact element={<Loginscreen/>}/>

@@ -23,7 +23,7 @@ function AboutScreen() {
             <h3>How to Access Admin page..?</h3>
             <li>New places, rooms, foods, added screen. 1st logout your Account,
                 next login this email:<b>mano@gamil.com</b> and password:<b>111</b>because this email and password only access to admin  go to link top /admin Example:<b>http://localhost:3000/admin</b></li>
-                <Link to="/contact"><button className="pay">Contact</button></Link>
+                {/* <Link to="/contact"><button className="pay">Contact</button></Link> */}
                 <br/><br/>
         </div>
     )

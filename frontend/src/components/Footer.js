@@ -35,9 +35,9 @@ function Footer() {
                         <a href="/home">
                             <p>Career</p>
                         </a>
-                        <a href="/contact">
+                        {/* <a href="/contact">
                             <p>Contact</p>
-                        </a>
+                        </a> */}
                     </div>
 
                     <div className="footer-link-div">

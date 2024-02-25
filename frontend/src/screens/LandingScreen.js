@@ -11,9 +11,9 @@ function LandingScreen() {
             <Link to="/home">
                 <button>Get Started</button>
             </Link>
-            <Link to="/contact">
+            {/* <Link to="/contact">
                 <button>Contact</button>
-            </Link>
+            </Link> */}
             </div>
         </div>
     )

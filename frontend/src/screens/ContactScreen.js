@@ -1,46 +1,46 @@
-import axios from "axios";
-import React, {  useState, useEffect } from "react";
-import Loader from "../components/Loader";
-import Error from "../components/Error";
-import Contacts from "../components/Contacts";
+// import axios from "axios";
+// import React, {  useState, useEffect } from "react";
+// import Loader from "../components/Loader";
+// import Error from "../components/Error";
+// import Contacts from "../components/Contacts";
 
 
-function ContactScreen() {
+// function ContactScreen() {
 
-    const [contacts, setContact] = useState([])
-    const [loading, setLoading] = useState()
-    const [error, setError] = useState()
+//     const [contacts, setContact] = useState([])
+//     const [loading, setLoading] = useState()
+//     const [error, setError] = useState()
 
-    useEffect(() => {
-        async function fetchData() {
+//     useEffect(() => {
+//         async function fetchData() {
 
-            try {
-                setLoading(true)
-                const data = (await axios.get("/api/contacts/getcontacts")).data
-                setContact(data)
-                setLoading(false)
-            } catch (error) {
-                setError(true)
-                console.log(error);
-                setLoading(false);
+//             try {
+//                 setLoading(true)
+//                 const data = (await axios.get("/api/contacts/getcontacts")).data
+//                 setContact(data)
+//                 setLoading(false)
+//             } catch (error) {
+//                 setError(true)
+//                 console.log(error);
+//                 setLoading(false);
 
-            }
+//             }
 
-        }
-        fetchData();
-    }, []);
+//         }
+//         fetchData();
+//     }, []);
 
-    return (
-        <div className="cont-app">
-            {loading ? (<center><Loader /></center>) : error ? (<Error />) : (contacts.map(contact => {
-                return (
-                    <div className="itemss" key={contact._id}>
-                        <Contacts contacts={contact} />
-                    </div>
-                );
-            }))}
-        </div>
+//     return (
+//         <div className="cont-app">
+//             {loading ? (<center><Loader /></center>) : error ? (<Error />) : (contacts.map(contact => {
+//                 return (
+//                     <div className="itemss" key={contact._id}>
+//                         <Contacts contacts={contact} />
+//                     </div>
+//                 );
+//             }))}
+//         </div>
 
-    )
-}
-export default ContactScreen;
+//     )
+// }
+// export default ContactScreen;

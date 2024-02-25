@@ -16,7 +16,7 @@ function Navbar() {
                 <div className="nav-menu">
                     <a href="/home" className="home">Home</a>
                     <a href="/about" className="about">About</a>
-                    <a href="/contact" className="about">Contact</a>
+                    {/* <a href="/contact" className="about">Contact</a> */}
 
                     {user ? (<>
                         <div className="dropdown">
